@@ -211,9 +211,7 @@ public class Solitaire {
 		
 	
 	
-	/**
-	 * Implements Step 4 - Count Cut - on the deck.
-	 */
+	
 	void countCut() {		
 		int count = deckRear.cardValue;
 		if(count == 27 || count == 28){
@@ -235,14 +233,7 @@ public class Solitaire {
 		
 	}
 	
-	/**
-	 * Gets a key. Calls the four steps - Joker A, Joker B, Triple Cut, Count Cut, then
-	 * counts down based on the value of the first card and extracts the next card value 
-	 * as key. But if that value is 27 or 28, repeats the whole process (Joker A through Count Cut)
-	 * on the latest (current) deck, until a value less than or equal to 26 is found, which is then returned.
-	 * 
-	 * @return Key between 1 and 26
-	 */
+	
 	int getKey() {
 	
 		jokerA();
